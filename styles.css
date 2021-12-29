@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: darkgray;
+}
+.heading {
+  text-align: center;
+  background-color: rgb(231, 220, 122);
+  padding: 27px;
+  /* margin: 12px; */
+}
+h1 {
+  background-color: rgb(231, 220, 122);
+}
+.info {
+  background-color: rgb(231, 220, 122);
+}
+.info {
+  color: chocolate;
+}
+.sudoku {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.grid-container {
+  justify-content: center;
+  margin: 4% auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  padding: 10px;
+  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  width: 350px;
+  height: 350px;
+}
+.cell {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-top: 25%;
+}
+.buttons {
+  margin: 2% auto;
+  padding-left: 36%;
+}
+#solve-button {
+  background-color: rgb(0, 0, 200, 0.4);
+}
+#reset-button {
+  background-color: rgb(255, 0, 0, 0.4);
+}

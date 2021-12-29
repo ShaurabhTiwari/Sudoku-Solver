@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sudoku Solver</title>
+</head>
+<body>
+    <div class = "heading">
+        <h1>Sudoku Solver</h1>
+        <div class="info">To solve the sudoku first enter the numbers in the corresponding box and then press Enter</div>
+    </div>
+    <div class="sudoku">
+        <div class="grid-container">
+            <div class="grid">
+                <div class="cell" id="11" contenteditable="true">11</div>
+                <div class="cell" id="12" contenteditable="true">12</div>
+                <div class="cell" id="13" contenteditable="true">13</div>
+                <div class="cell" id="14" contenteditable="true">14</div>
+                <div class="cell" id="15" contenteditable="true">15</div>
+                <div class="cell" id="16" contenteditable="true">16</div>
+                <div class="cell" id="17" contenteditable="true">17</div>
+                <div class="cell" id="18" contenteditable="true">18</div>
+                <div class="cell" id="19" contenteditable="true">19</div>
+                <div class="cell" id="21" contenteditable="true">21</div>
+                <div class="cell" id="22" contenteditable="true">22</div>
+                <div class="cell" id="23" contenteditable="true">23</div>
+                <div class="cell" id="24" contenteditable="true">24</div>
+                <div class="cell" id="25" contenteditable="true">25</div>
+                <div class="cell" id="26" contenteditable="true">26</div>
+                <div class="cell" id="27" contenteditable="true">27</div>
+                <div class="cell" id="28" contenteditable="true">28</div>
+                <div class="cell" id="29" contenteditable="true">29</div>
+                <div class="cell" id="31" contenteditable="true">31</div>
+                <div class="cell" id="32" contenteditable="true">32</div>
+                <div class="cell" id="33" contenteditable="true">33</div>
+                <div class="cell" id="34" contenteditable="true">34</div>
+                <div class="cell" id="35" contenteditable="true">35</div>
+                <div class="cell" id="36" contenteditable="true">36</div>
+                <div class="cell" id="37" contenteditable="true">37</div>
+                <div class="cell" id="38" contenteditable="true">38</div>
+                <div class="cell" id="39" contenteditable="true">39</div>
+                <div class="cell" id="41" contenteditable="true">41</div>
+                <div class="cell" id="42" contenteditable="true">42</div>
+                <div class="cell" id="43" contenteditable="true">43</div>
+                <div class="cell" id="44" contenteditable="true">44</div>
+                <div class="cell" id="45" contenteditable="true">45</div>
+                <div class="cell" id="46" contenteditable="true">46</div>
+                <div class="cell" id="47" contenteditable="true">47</div>
+                <div class="cell" id="48" contenteditable="true">48</div>
+                <div class="cell" id="49" contenteditable="true">49</div>
+                <div class="cell" id="51" contenteditable="true">51</div>
+                <div class="cell" id="52" contenteditable="true">52</div>
+                <div class="cell" id="53" contenteditable="true">53</div>
+                <div class="cell" id="54" contenteditable="true">54</div>
+                <div class="cell" id="55" contenteditable="true">55</div>
+                <div class="cell" id="56" contenteditable="true">56</div>
+                <div class="cell" id="57" contenteditable="true">57</div>
+                <div class="cell" id="58" contenteditable="true">58</div>
+                <div class="cell" id="59" contenteditable="true">59</div>
+                <div class="cell" id="61" contenteditable="true">61</div>
+                <div class="cell" id="62" contenteditable="true">62</div>
+                <div class="cell" id="63" contenteditable="true">63</div>
+                <div class="cell" id="64" contenteditable="true">64</div>
+                <div class="cell" id="65" contenteditable="true">65</div>
+                <div class="cell" id="66" contenteditable="true">66</div>
+                <div class="cell" id="67" contenteditable="true">67</div>
+                <div class="cell" id="68" contenteditable="true">68</div>
+                <div class="cell" id="69" contenteditable="true">69</div>
+                <div class="cell" id="71" contenteditable="true">71</div>
+                <div class="cell" id="72" contenteditable="true">72</div>
+                <div class="cell" id="73" contenteditable="true">73</div>
+                <div class="cell" id="74" contenteditable="true">74</div>
+                <div class="cell" id="75" contenteditable="true">75</div>
+                <div class="cell" id="76" contenteditable="true">76</div>
+                <div class="cell" id="77" contenteditable="true">77</div>
+                <div class="cell" id="78" contenteditable="true">78</div>
+                <div class="cell" id="79" contenteditable="true">79</div>
+                <div class="cell" id="81" contenteditable="true">81</div>
+                <div class="cell" id="82" contenteditable="true">82</div>
+                <div class="cell" id="83" contenteditable="true">83</div>
+                <div class="cell" id="84" contenteditable="true">84</div>
+                <div class="cell" id="85" contenteditable="true">85</div>
+                <div class="cell" id="86" contenteditable="true">86</div>
+                <div class="cell" id="87" contenteditable="true">87</div>
+                <div class="cell" id="88" contenteditable="true">88</div>
+                <div class="cell" id="89" contenteditable="true">89</div>
+                <div class="cell" id="91" contenteditable="true">91</div>
+                <div class="cell" id="92" contenteditable="true">92</div>
+                <div class="cell" id="93" contenteditable="true">93</div>
+                <div class="cell" id="94" contenteditable="true">94</div>
+                <div class="cell" id="95" contenteditable="true">95</div>
+                <div class="cell" id="96" contenteditable="true">96</div>
+                <div class="cell" id="97" contenteditable="true">97</div>
+                <div class="cell" id="98" contenteditable="true">98</div>
+                <div class="cell" id="99" contenteditable="true">99</div>
+            </div>
+            <div class="buttons">
+                <button id="solve-button">Solve</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
